@@ -7,7 +7,7 @@ using namespace std;
 int main(){
     int *array = new int[SIZE];
     int i;
-    cout << "enter to 10 members of array (enter not integer to stop)\n";
+    cout << "enter to 10 members of array\n";
     for(i = 0; i < SIZE; i++){
         cout << "[" << i << "] : ";
         cin >> array[i];
