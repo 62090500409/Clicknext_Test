@@ -2,14 +2,14 @@
 using namespace std;
 
 int main(){
-    uint sec;
+    unsigned int sec;
     cout << "enter amount of seconds : ";
     cin >> sec;
-    uint min = sec/60;
+    unsigned int min = sec/60;
     sec = sec % 60;
-    uint hour = min/60;
+    unsigned int hour = min/60;
     min = min % 60;
-    uint day = hour/24;
+    unsigned int day = hour/24;
     hour = hour % 24;
     cout << "result: ";
     if(hour < 10) cout << '0';

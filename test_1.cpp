@@ -4,7 +4,7 @@ using namespace std;
 
 #define MAX 100
 
-bool pair_sum(int* array, uint size, int sum){
+bool pair_sum(int* array, unsigned int size, int sum){
     int* sorted = insertion_sort(array, size);
     int* head = sorted;
     int* tail = sorted + (size - 1);

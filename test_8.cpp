@@ -4,7 +4,7 @@ using namespace std;
 #define MAX 1000
 
 int main(){
-    uint price, five_hund, one_hund, fifty, twenty, ten, five;
+    unsigned int price, five_hund, one_hund, fifty, twenty, ten, five;
     cout << "customer pay " << MAX << " thb\n";
     cout << "enter price of product (must less than " << MAX << ") : ";
     cin >> price;

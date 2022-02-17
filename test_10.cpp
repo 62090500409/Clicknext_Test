@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    uint input, i, j;
+    unsigned int input, i, j;
     cout << "enter high of pyramid : ";
     cin >> input;
     for(i = 0; i < input; i++){

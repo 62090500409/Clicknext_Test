@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
     int* array = new int[MAX];
-    uint i,size;
+    unsigned int i,size;
     cout << "enter boardcast day\n";
     cout << "*enter up to " << MAX << " members of array (enter zero or negative or non-integer to stop)\n";
     size = INT_ARRAY_INPUT(&array, MAX, '-');

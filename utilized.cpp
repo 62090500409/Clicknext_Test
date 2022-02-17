@@ -11,7 +11,7 @@ int* ZEROARRAY(int n){
     return arr;
 }
 
-int INT_ARRAY_INPUT(int* array[], uint max, char stop_condi){
+int INT_ARRAY_INPUT(int* array[], unsigned int max, char stop_condi){
     int i, j, tmp, sum;
     for(i = 0; i < max; i++){
         cout << "[" << i << "] : ";
@@ -39,7 +39,7 @@ int INT_ARRAY_INPUT(int* array[], uint max, char stop_condi){
     return i;
 }
 
-void PRINT_INT_ARRAY(int* array, uint size){
+void PRINT_INT_ARRAY(int* array, unsigned int size){
     int i;
     cout << "your array : [ " << array[0];
     for(i = 1; i < size; i++){
@@ -48,7 +48,7 @@ void PRINT_INT_ARRAY(int* array, uint size){
     cout << " ] array size : " << size << endl;
 }
 
-int* insertion_sort(int* array, uint size){
+int* insertion_sort(int* array, unsigned int size){
     int* sort = new int[size];
     int i,j;
     for(i = 0; i < size; i++){
@@ -64,10 +64,10 @@ int* insertion_sort(int* array, uint size){
     return sort;
 }
 
-int unique_array(int* unique[], int* array, uint size){
+int unique_array(int* unique[], int* array, unsigned int size){
     int* sorted = insertion_sort(array, size);
     int* unique_list = new int[size];
-    uint i, n;
+    unsigned int i, n;
     n = 0;
     for(i = 0; i < size; i++){
         unique_list[n] = sorted[i];
